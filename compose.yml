@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: navyasrireddyy/myrepo:dbimage
+   image: navyasrireddyy/myrepo:db
    ports:
      - "3306:3306"
 
  application:
-   image: navyasrireddyy/myrepo:appimage
+   image: navyasrireddyy/myrepo:app
    ports:
      - "1111:8080"
    depends_on:
